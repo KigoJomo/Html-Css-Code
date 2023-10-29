@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2vw;
+}
+html {
+  width: 100%;
+  height: 100%;
+  body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    background: linear-gradient(45deg, #5d5d5d, #222222, #000000);
+
+    h1 {
+      /* Add your styles for the h1 here */
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: transparent;
+      background: url(./supernova.png) center;
+      background-clip: text;
+      letter-spacing: 0.2rem;
+      filter: drop-shadow(4px 4px 1px #000000);
+    }
+
+    .solar-system {
+      /* Add your styles for the solar system container here */
+      width: 420px;
+      aspect-ratio: 1/1;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      animation: 15s rotate linear infinite;
+
+      .earth-circle {
+        /* Add your styles for the Earth's orbit here */
+        width: 100%;
+        aspect-ratio: 1/1;
+        border: .5px solid yellow;
+        border-radius: 50%;
+      }
+
+      .sun {
+        /* Add your styles for the sun here */
+        position: absolute;
+        width: 17%;
+        aspect-ratio: 1/1;
+        background-color: yellow;
+        border-radius: 50%;
+        box-shadow: 0px 0px 20px yellow;
+      }
+
+      @keyframes rotate {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .earth {
+        /* Add your styles for the Earth here */
+        position: absolute;
+        top: -5%;
+        width: 10%;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        background: radial-gradient(circle, green, blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: 3s rotate linear infinite;
+
+        .moon-circle {
+          /* Add your styles for the Moon's orbit here */
+          position: absolute;
+          top: -50%;
+          width: 200%;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+          border: .5px solid white;
+        }
+
+        .moon {
+          /* Add your styles for the moon here */
+          position: absolute;
+          top: -75%;
+          width: 50%;
+          aspect-ratio: 1/1;
+          background-color: white;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
