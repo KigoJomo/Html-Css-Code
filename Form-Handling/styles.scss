@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2vw;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+
+  body {
+    height: 100%;
+
+    h1 {
+      /* Your h1 styles here */
+    }
+
+    form {
+      /* Your form styles here */
+
+      input {
+        /* Common input styles */
+
+        &:focus {
+          /* Input styles on focus */
+          outline: none;
+          border-color: #007bff;
+        }
+      }
+
+      label {
+        /* Your label styles here */
+      }
+
+      #text {
+        /* Specific styles for input with id "text" */
+      }
+
+      #email {
+        /* Specific styles for input with id "email" */
+      }
+
+      #username {
+        /* Specific styles for input with id "username" */
+      }
+
+      #password {
+        /* Specific styles for input with id "password" */
+      }
+
+      #checkbox {
+        /* Specific styles for input with id "checkbox" */
+
+        label {
+          /* Styles for the label associated with the checkbox */
+        }
+      }
+
+      button {
+        /* Your button styles here */
+      }
+    }
+  }
+}
