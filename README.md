@@ -1,1 +1,1 @@
-Html-Css-Code
+SImple front-end styling (Html-Css-Code)
