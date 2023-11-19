@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+$--blur-radius: 10px;
+$--spread: 0px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  color: white;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+
+  body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10vh;
+    background-color: #2b2b2b;
+
+    h1 {
+      text-transform: capitalize;
+      text-decoration: underline;
+      display: none;
+    }
+
+    button {
+      font-size: 0.7rem;
+      text-transform: capitalize;
+      padding: 1% 2%;
+      color: #2b2b2b;
+      background-color: white;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    @keyframes rotate {
+      0% {
+        transform: rotateZ(0);
+      }
+      100% {
+        transform: rotateZ(360deg);
+      }
+    }
+
+    .orbit-rotate {
+      animation: rotate 4s infinite linear;
+    }
+
+    .orbit1 {
+      width: 300px;
+      height: 300px;
+      border: 1px solid white;
+      border-radius: 50%;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    //   transform: rotateZ(40deg);
+      transform-style: preserve-3d;
+      position: relative;
+
+      .light {
+        width: 50px;
+        aspect-ratio: 1/1;
+        border-radius: 50%;
+        // border: 1px solid white;
+        position: absolute;
+        transform: scale(1.6);
+
+        &:nth-child(1) {
+          top: -25px;
+          background-color: red;
+          box-shadow: 0px 0px $--blur-radius $--spread red;
+        }
+        &:nth-child(2) {
+          left: -25px;
+          background-color: blue;
+          box-shadow: 0px 0px $--blur-radius $--spread blue;
+        }
+        &:nth-child(3) {
+          bottom: -25px;
+          background-color: rgb(5, 255, 5);
+          box-shadow: 0px 0px $--blur-radius $--spread rgb(5, 255, 5);
+        }
+        &:nth-child(4) {
+          right: -25px;
+          background-color: rgb(255, 0, 242);
+          box-shadow: 0px 0px $--blur-radius $--spread rgb(255, 0, 242);
+        }
+      }
+    }
+  }
+}

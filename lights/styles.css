@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  color: white;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+html body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10vh;
+  background-color: #2b2b2b;
+}
+html body h1 {
+  text-transform: capitalize;
+  text-decoration: underline;
+  display: none;
+}
+html body button {
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  padding: 1% 2%;
+  color: #2b2b2b;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+@keyframes rotate {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+html body .orbit-rotate {
+  animation: rotate 4s infinite linear;
+}
+html body .orbit1 {
+  width: 300px;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform-style: preserve-3d;
+  position: relative;
+}
+html body .orbit1 .light {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  position: absolute;
+  transform: scale(1.6);
+}
+html body .orbit1 .light:nth-child(1) {
+  top: -25px;
+  background-color: red;
+  box-shadow: 0px 0px 10px 0px red;
+}
+html body .orbit1 .light:nth-child(2) {
+  left: -25px;
+  background-color: blue;
+  box-shadow: 0px 0px 10px 0px blue;
+}
+html body .orbit1 .light:nth-child(3) {
+  bottom: -25px;
+  background-color: rgb(5, 255, 5);
+  box-shadow: 0px 0px 10px 0px rgb(5, 255, 5);
+}
+html body .orbit1 .light:nth-child(4) {
+  right: -25px;
+  background-color: rgb(255, 0, 242);
+  box-shadow: 0px 0px 10px 0px rgb(255, 0, 242);
+}/*# sourceMappingURL=styles.css.map */
