@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Handling</title>
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <h1>hello there</h1>
     <form action="">
-        <input type="text" id="text">
-        <label for="text">Name</label>
+        <div class="input">
+            <input type="text" id="text">
+            <label for="text">Name</label>
+        </div>
 
-        <input type="email" id="email">
-        <label for="email">Email</label>
+        <div class="input">
+            <input type="email" id="email">
+            <label for="email">Email</label>
+        </div>
 
-        <input type="text" id="username">
-        <label for="username">Username</label>
+        <div class="input">
+            <input type="text" id="username">
+            <label for="username">Username</label>
+        </div>
 
-        <input type="password" id="password">
-        <label for="password">Password</label>
+        <div class="input">
+            <input type="password" id="password">
+            <label for="password">Password</label>
+        </div>
 
-        <input type="checkbox" id="checkbox">
-        <label for="checkbox">Show password</label>
-        
+        <div class="input check">
+            <input type="checkbox" id="checkbox" class="checkbox">
+            <label for="checkbox">Show password</label>
+        </div>
+
         <button type="submit">Submit</button>
     </form>
 </body>

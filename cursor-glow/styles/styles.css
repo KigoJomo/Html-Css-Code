@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.7vw;
+  font-family: sans-serif;
+  color: #fff;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+html body {
+  height: 100%;
+  padding: 10vh 0vw;
+  background-color: #070707;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+html body h1 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+}
+html body .grid-container {
+  width: 100%;
+  padding: 0 80px;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+html body .grid-container .grid-item {
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body .grid-container .grid-item .glow {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(165, 218, 255, 0.5019607843);
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.2s ease-out, background-color 0.2s ease-out;
+}
+html body .grid-container .grid-item p {
+  text-transform: capitalize;
+  font-size: 0.8rem;
+}/*# sourceMappingURL=styles.css.map */

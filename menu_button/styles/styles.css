@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  width: 100vw;
+  height: 100vh;
+}
+html body {
+  width: 100%;
+  height: 100%;
+  background-color: #2b2b2b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+html body .button {
+  width: 30%;
+  aspect-ratio: 1/1;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  position: relative;
+}
+html body .button .box {
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  border: 1rem solid #eeeeee;
+  border-radius: 2rem;
+  transition: all 1s ease-in-out;
+}
+html body .button .box1 {
+  top: 5%;
+  left: 5%;
+}
+html body .button .box2 {
+  top: 5%;
+  right: 5%;
+}
+html body .button .box3 {
+  bottom: 5%;
+  left: 5%;
+}
+html body .button .box4 {
+  bottom: 5%;
+  right: 5%;
+}
+html body .clicked .box {
+  border-width: 1.5rem;
+  transition: all 1s ease-in-out;
+}
+html body .clicked .box1 {
+  top: 5%;
+  left: 5%;
+  border-right-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: rotateZ(45deg);
+}
+html body .clicked .box2 {
+  top: 5%;
+  right: 5%;
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform: rotateZ(-45deg);
+}
+html body .clicked .box3 {
+  bottom: 5%;
+  left: 5%;
+  border-right-width: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  transform: rotateZ(-45deg);
+}
+html body .clicked .box4 {
+  bottom: 5%;
+  right: 5%;
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform: rotateZ(45deg);
+}
+html body button {
+  position: absolute;
+  bottom: 8vh;
+  padding: 1vh 1vw;
+  font-size: 1.2vw;
+  text-transform: capitalize;
+  background-color: #2b2b2b;
+  border: 2px solid #eeeeee;
+  border-radius: 5px;
+  color: #eeeeee;
+  cursor: pointer;
+}
+html body .menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width: 2%;
+  max-width: 40px;
+  min-width: 20px;
+  aspect-ratio: 1/1;
+  border-radius: 5px;
+}
+html body .menu .corner {
+  position: absolute;
+  height: 40%;
+  width: 40%;
+  border: 1px solid #eeeeee;
+  border-radius: 1px;
+  transition: all 1s ease-in-out;
+}
+html body .menu .corner1 {
+  top: 5%;
+  left: 5%;
+}
+html body .menu .corner2 {
+  top: 5%;
+  right: 5%;
+}
+html body .menu .corner3 {
+  bottom: 5%;
+  left: 5%;
+}
+html body .menu .corner4 {
+  bottom: 5%;
+  right: 5%;
+}
+html body .menu-opened .corner {
+  border-width: 2px;
+  transition: all 1s ease-in-out;
+}
+html body .menu-opened .corner1 {
+  top: 5%;
+  left: 5%;
+  border-right-width: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: rotateZ(45deg);
+}
+html body .menu-opened .corner2 {
+  top: 5%;
+  right: 5%;
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform: rotateZ(-45deg);
+}
+html body .menu-opened .corner3 {
+  bottom: 5%;
+  left: 5%;
+  border-right-width: 0;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  transform: rotateZ(-45deg);
+}
+html body .menu-opened .corner4 {
+  bottom: 5%;
+  right: 5%;
+  border-left-width: 0;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transform: rotateZ(45deg);
+}/*# sourceMappingURL=styles.css.map */
