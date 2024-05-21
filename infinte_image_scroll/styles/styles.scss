@@ -23,27 +23,32 @@ html {
       position: relative;
       white-space: nowrap;
       overflow: hidden;
-
-      .image-wrapper {
-        display: inline-block;
-        animation: scroll 1s linear infinite;
-        img {
-            display: inline-block;
-            height: 200px;
-            margin-left: 16px;
-            aspect-ratio: 4/3;
-            border-radius: 16px;
-            object-fit: cover;
-            object-position: center;
+      &:hover {
+        .image-wrapper {
+          animation-play-state: paused;
         }
       }
 
-      @keyframes scroll{
-        from{
-            transform: translateX(0);
+      .image-wrapper {
+        display: inline-block;
+        animation: scroll 10s linear infinite;
+        img {
+          display: inline-block;
+          height: 200px;
+          margin-left: 16px;
+          aspect-ratio: 4/3;
+          border-radius: 16px;
+          object-fit: cover;
+          object-position: center;
         }
-        to{
-            transform: translateX(-100%);
+      }
+
+      @keyframes scroll {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(-100%);
         }
       }
     }

@@ -23,9 +23,12 @@ html body .image-container {
   white-space: nowrap;
   overflow: hidden;
 }
+html body .image-container:hover .image-wrapper {
+  animation-play-state: paused;
+}
 html body .image-container .image-wrapper {
   display: inline-block;
-  animation: scroll 1s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 html body .image-container .image-wrapper img {
   display: inline-block;
