@@ -1,0 +1,62 @@
+:root {
+  --black: #141414;
+  --white: #fefefe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: --white;
+}
+
+html {
+  width: 100dvw;
+  height: 100dvh;
+  overflow: hidden;
+}
+html body {
+  height: 100%;
+  width: 100%;
+  background: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+html body .hexagon,
+html body .custom {
+  filter: url(#round);
+}
+html body .hexagon {
+  width: 30rem;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+html body .hexagon img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: center;
+     object-fit: center;
+  -o-object-position: center;
+     object-position: center;
+}
+html body .hexagon::before {
+  display: block;
+  content: "";
+  padding-top: 100%;
+  background: url(../images/balcony.jpg) center/cover no-repeat;
+  -webkit-clip-path: polygon(0 0, 70% 0, 76% 24%, 100% 30%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 70% 0, 76% 24%, 100% 30%, 100% 100%, 0 100%);
+}
+html body .custom {
+  width: 30rem;
+  aspect-ratio: 1;
+  display: inline-block;
+}
+html body .custom img {
+  height: 100%;
+  aspect-ratio: 1/1;
+  display: block;
+  -webkit-clip-path: polygon(50% 0%, 50% 50%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+          clip-path: polygon(50% 0%, 50% 50%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
